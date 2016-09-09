@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+   int a;
+   printf("Enter any integer to check if it is prime\n");
+   scanf("%d",&a);
+   int i,r,d=1;
+   r=pow(a,0.5);
+   for(i=2;i<r+2;i++)
+   {
+       if(a%i==0)
+        {
+            d=0;
+            break;
+        }
+       else
+        d=1;
+
+   }
+   if((d==1&&a>1)||a==2)
+    printf("TRUE\n");
+   else
+    printf("FALSE\n");
+
+        return 0;
+
+    }
